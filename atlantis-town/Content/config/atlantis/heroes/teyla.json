@@ -1,0 +1,105 @@
+{
+	"teyla" :
+	{
+		"class" : "tauri",
+		"female" : true,
+		"texts" :
+		{
+			"name" : "Teyla",
+			"biography" : "Her past is a mystery to all.",
+			"specialty" :
+			{
+				"description" : "Bonus of athosians.",
+				"tooltip" : "",
+				"name" : "athosians"
+			}
+		},			
+
+
+		"images" :
+		{
+			"specialtySmall" : "atlantis/heroes/teyla/spec-small.png",
+			"specialtyLarge" : "atlantis/heroes/teyla/spec-large.png",
+			"large" : "atlantis/heroes/teyla/portrait-large.png",
+			"small" : "atlantis/heroes/teyla/portrait-small.png"
+		},
+
+		"spellbook" :
+		[
+			"iceBolt"
+		],
+
+		"army" :
+		[
+			{
+				"creature" : "athosian",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "mastadge",
+				"max" : 10,
+				"min" : 8
+			},
+			{
+				"creature" : "genii",
+				"max" : 6,
+				"min" : 4
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "waterMagic"
+			}
+		],
+		"specialty": //athosian
+		[
+			{
+				"growsWithLevel": true, //value is calculated at level-up
+				"bonuses":
+				[
+					{
+						"type": "PRIMARY_SKILL",
+						"subtype": 0,
+						"limiters":
+						[
+							{
+								"type": "CREATURE_TYPE_LIMITER",
+								"parameters" : ["athosian", true]
+							}
+						]
+					},
+					{
+						"type": "PRIMARY_SKILL",
+						"subtype": 1,
+						"limiters":
+						[
+							{
+								"type": "CREATURE_TYPE_LIMITER",
+								"parameters" : ["athosian", true]
+							}
+						]
+					},
+					{
+						"type": "STACKS_SPEED",
+						"val": 1,
+						"limiters":
+						[
+							{
+								"type": "CREATURE_TYPE_LIMITER",
+								"parameters" : ["athosian", true]
+							}
+						]
+					}
+				]
+			}
+		]		
+	}
+}

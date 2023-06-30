@@ -1,0 +1,64 @@
+{
+	"wraithwarrior":
+	{
+		"name" :
+		{
+			"plural" : "Wraith Warriors",
+			"singular" : "Wraith Warrior"
+		},
+		"advMapAmount" :
+		{
+			"max" : 12,
+			"min" : 5
+		},
+		"faction" : "atlantis",
+		"aiValue" : 1728,
+		"attack" : 16,
+		"cost" :
+		{
+			"gold" : 1000
+		},
+		"damage" :
+		{
+			"max" : 20,
+			"min" : 16
+		},
+		"defense" : 16,
+		"fightValue" : 1528,
+		"graphics" :
+		{
+			"animation" : "atlantis/battle/creatures/wraith.def",
+			"map" : "atlantis/map/wraithmini.def",
+			"iconSmall" : "atlantis/iconsSmall/wraiths.bmp",
+			"iconLarge" : "atlantis/iconsBig/wraithl.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.40,
+				"attack" : 1,
+				"idle" : 10
+			}
+		},
+		"growth" : 2,
+		"hitPoints" : 90,
+		"level" : 6,
+
+		"sound" :
+		{
+			"attack": "PFNDATTK.wav",
+			"defend": "PFNDDFND.wav",
+			"killed": "PFNDKILL.wav",
+			"move": "PFNDMOVE.wav",
+			"wince": "PFNDWNCE.wav"
+		},
+		"speed" : 6,
+		"abilities":
+		{
+			"drainsLife" :
+			{
+				"type" : "LIFE_DRAIN",
+				"val" : 100
+			}
+		}
+	}
+}

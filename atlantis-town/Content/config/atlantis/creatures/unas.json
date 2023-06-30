@@ -1,0 +1,64 @@
+{
+	"unas":
+	{
+		"name" :
+		{
+			"plural" : "Unas Warriors",
+			"singular" : "Unas Warrior"
+		},
+		"advMapAmount" :
+		{
+			"max" : 25,
+			"min" : 16
+		},
+		"faction" : "atlantis",
+		"aiValue" : 156,
+		"attack" : 8,
+		"cost" :
+		{
+			"gold" : 150
+		},
+		"damage" :
+		{
+			"max" : 4,
+			"min" : 2
+		},
+		"defense" : 5,
+		"fightValue" : 163,
+		"graphics" :
+		{
+			"animation" : "atlantis/battle/creatures/unas.def",
+			"map" : "atlantis/map/unasmini.def",
+			"iconSmall" : "atlantis/iconsSmall/unass.bmp",
+			"iconLarge" : "atlantis/iconsBig/unasl.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.00,
+				"attack" : 1,
+				"idle" : 10
+			}
+		},
+		"growth" : 8,
+		"hitPoints" : 16,
+		"level" : 2,
+		"sound" :
+		{
+			"attack": "OGREATTK.wav",
+			"defend": "OGREDFND.wav",
+			"killed": "OGREKILL.wav",
+			"move": "OGREMOVE.wav",
+			"wince": "OGREWNCE.wav"
+		},
+		"speed" : 7,
+		"abilities" :
+		{
+			"shield effect" :
+			{
+				"type" : "GENERAL_DAMAGE_REDUCTION",
+				"subtype" : 0, //shield effect//seems that there is no subtype
+				"val" : 40
+			}
+		}
+	}
+}

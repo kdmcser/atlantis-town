@@ -1,0 +1,77 @@
+{
+	"primary" :
+	{
+		"class" : "wraith",
+		"female" : true,
+		"texts" :
+		{
+			"name" : "The Primary",
+			"biography" : "The Primary was a Wraith queen who was in control of an alliance of several Hive Ships. When Todd planned a go-ahead for Dr. Jennifer Keller's plan from Michael's database, to eliminate the Wraith's need to feed, Todd wanted to convince the primary.",
+			"specialty" :
+			{
+				"description" : "Bonus of Armorer",
+				"tooltip" : "",
+				"name" : "Armorer"
+			}
+		},
+
+		"images" :
+		{
+			"specialtySmall" : "atlantis/heroes/primary/spec-small.png",
+			"specialtyLarge" : "atlantis/heroes/primary/spec-large.png",
+			"large" : "atlantis/heroes/primary/portrait-large.png",
+			"small" : "atlantis/heroes/primary/portrait-small.png"
+		},
+
+		"army" :
+		[
+			{
+				"creature" : "athosian",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "mastadge",
+				"max" : 10,
+				"min" : 8
+			},
+			{
+				"creature" : "genii",
+				"max" : 6,
+				"min" : 4
+			}
+		],
+
+		"skills" : [
+			{
+				"level" : "basic",
+				"skill" : "armorer"
+			},
+			{
+				"level" : "basic",
+				"skill" : "tactics"
+			}
+		],
+		
+		"specialty": //defense bonus
+		[
+			{
+				"growsWithLevel" : true,
+				"bonuses":
+				[
+					{
+						"type": "SPECIAL_SECONDARY_SKILL", //give 5% to this skill with each level
+						"subtype": "skill.armorer",
+						"val": 5
+					},
+					{
+						"type": "SECONDARY_SKILL_PREMY", //used for first level
+						"subtype": "skill.armorer",
+						"val": 5,
+						"valueType": "PERCENT_TO_BASE"
+					}
+				]
+			}
+		]
+	}
+}

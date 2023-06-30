@@ -1,0 +1,94 @@
+{
+	"todd" :
+	{
+		"class" : "wraith",
+		"texts" :
+		{
+			"name" : "Todd",
+			"biography" : "Guide, known to the Atlantis expedition as Todd, is a Wraith with whom the Atlantis expedition has made contact several times. He was named Todd by Lt. Colonel John Sheppard after a guy he knew from college who was very pale.",
+			"specialty" :
+			{
+				"description" : "Bonus of Wraith Warriors",
+				"tooltip" : "",
+				"name" : "Wraith Warriors"
+			}
+		},
+		"images" :
+		{
+			"specialtySmall" : "atlantis/heroes/todd/spec-small.png",
+			"specialtyLarge" : "atlantis/heroes/todd/spec-large.png",
+			"large" : "atlantis/heroes/todd/portrait-large.png",
+			"small" : "atlantis/heroes/todd/portrait-small.png"
+		},
+
+		"army" :
+		[
+			{
+				"creature" : "athosian",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "wraithwarrior",
+				"max" : 1,
+				"min" : 1
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "pathfinding"
+			},
+			{
+				"level" : "basic",
+				"skill" : "offence"
+			}
+		],
+		
+		"specialty": //wraith
+		[
+			{
+				"growsWithLevel": true, //value is calculated at level-up
+				"bonuses":
+				[
+					{
+						"type": "PRIMARY_SKILL",
+						"subtype": 0,
+						"limiters":
+						[
+							{
+								"type": "CREATURE_TYPE_LIMITER",
+								"parameters" : ["wraithwarrior", true]
+							}
+						]
+					},
+					{
+						"type": "PRIMARY_SKILL",
+						"subtype": 1,
+						"limiters":
+						[
+							{
+								"type": "CREATURE_TYPE_LIMITER",
+								"parameters" : ["wraithwarrior", true]
+							}
+						]
+					},
+					{
+						"type": "STACKS_SPEED",
+						"val": 1,
+						"limiters":
+						[
+							{
+								"type": "CREATURE_TYPE_LIMITER",
+								"parameters" : ["wraithwarrior", true]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}
+

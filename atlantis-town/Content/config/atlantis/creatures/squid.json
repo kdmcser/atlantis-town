@@ -1,0 +1,101 @@
+{
+	"squid":
+	{
+		"name" :
+		{
+			"plural" : "Hidoman Squids",
+			"singular" : "Hidoman Squid"
+		},
+		"advMapAmount" :
+		{
+			"max" : 10,
+			"min" : 4
+		},
+		"faction" : "atlantis",
+		"aiValue" : 3850,
+		"attack" : 17,
+		"cost" :
+		{
+			"gold" : 2400,
+			"gems" : 1
+		},
+		"damage" :
+		{
+			"max" : 40,
+			"min" : 30
+		},
+		"defense" : 21,
+		"fightValue" : 3100,
+		"graphics" :
+		{
+			"animation" : "atlantis/battle/creatures/squid.DEF",
+			"map" : "atlantis/map/squidmini.def",
+			"iconSmall" : "atlantis/iconsSmall/squids.bmp",
+			"iconLarge" : "atlantis/iconsBig/squidl.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.17,
+				"attack" : 1,
+				"idle" : 10
+			}
+		},
+		"doubleWide" : false,
+		"growth" : 1,
+		"hitPoints" : 200,
+		"level" : 7,
+		"sound" :
+		{
+			"attack": "EVLIATTK.wav",
+			"defend": "EVLIDFND.wav",
+			"killed": "EVLIKILL.wav",
+			"move": "EVLIMOVE.wav",
+			"wince": "EVLIWNCE.wav"
+		},
+		"speed" : 8,
+		"abilities" :
+		{
+			"casts bind after attack" :
+			{
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.bind",	//72 
+				"val" : 100,
+			},
+			"+10defense when defending" :
+			{
+				"type" : "DEFENSIVE_STANCE",
+				"val" : 10
+			},
+			"easy to burn-firewall" :
+			{
+				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"val" : 100,
+				"subtype" : "spell.fireWall"	//13
+			},
+			"easy to burn-fireball" :
+			{
+				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"val" : 100,
+				"subtype" : "spell.fireball"	//21
+			},
+			"easy to burn-inferno" :
+			{
+				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"val" : 100,
+				"subtype" : "spell.inferno"	//22
+			},
+			"easy to burn-armageddon" :
+			{
+				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"val" : 100,
+				"subtype" : "spell.armageddon"	//26
+			},
+			"easy to burn-fireshield" :
+			{ 
+				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"val" : 100,
+				"subtype" : "spell.fireShield"	//29
+			}
+		}	
+	}
+}

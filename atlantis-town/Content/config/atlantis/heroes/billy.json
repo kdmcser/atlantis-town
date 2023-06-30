@@ -1,0 +1,100 @@
+{
+	"billy" :
+	{
+		"class" : "wraith",
+		"texts" :
+		{
+			"name" : "Billy",
+			"biography" : "Precision, or Billy as he was nicknamed by the Tau'ri, is a Wraith bridge officer.",
+			"specialty" :
+			{
+				"description" : "Bonus of geniis",
+				"tooltip" : "",
+				"name" : "geniis"
+			}
+		},
+
+		"images" :
+		{
+			"specialtySmall" : "atlantis/heroes/billy/spec-small.png",
+			"specialtyLarge" : "atlantis/heroes/billy/spec-large.png",
+			"large" : "atlantis/heroes/billy/portrait-large.png",
+			"small" : "atlantis/heroes/billy/portrait-small.png"
+		},
+
+		"army" :
+		[
+			{
+				"creature" : "athosian",
+				"max" : 20,
+				"min" : 15
+			},
+			{
+				"creature" : "genii",
+				"max" : 7,
+				"min" : 4
+			},
+			{
+				"creature" : "genii",
+				"max" : 7,
+				"min" : 4
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "logistics"
+			},
+			{
+				"level" : "basic",
+				"skill" : "scouting"
+			}
+		],
+		
+		"specialty": //genii
+		[
+			{
+				"growsWithLevel": true, //value is calculated at level-up
+				"bonuses":
+				[
+					{
+						"type": "PRIMARY_SKILL",
+						"subtype": 0,
+						"limiters":
+						[
+							{
+								"type": "CREATURE_TYPE_LIMITER",
+								"parameters" : ["genii", true]
+							}
+						]
+					},
+					{
+						"type": "PRIMARY_SKILL",
+						"subtype": 1,
+						"limiters":
+						[
+							{
+								"type": "CREATURE_TYPE_LIMITER",
+								"parameters" : ["genii", true]
+							}
+						]
+					},
+					{
+						"type": "STACKS_SPEED",
+						"val": 1,
+						"limiters":
+						[
+							{
+								"type": "CREATURE_TYPE_LIMITER",
+								"parameters" : ["genii", true]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}
+

@@ -1,0 +1,102 @@
+{
+	"ford" :
+	{
+		"class" : "tauri",
+		"female" : true,
+		"texts" :
+		{
+			"name" : "Ford",
+			"biography" : "Representing the United States Marine Corps, Aiden Ford was present during the scientific investigation of the Antarctic outpost until he was transferred to the Atlantis expedition, arriving at Atlantis in the Pegasus Galaxy.",
+			"specialty" :
+			{
+				"description" : "Bonus of Centaur Barbarians",
+				"tooltip" : "",
+				"name" : "Centaur Barbarians"
+			}
+		},
+
+		"images" :
+		{
+			"specialtySmall" : "atlantis/heroes/ford/spec-small.png",
+			"specialtyLarge" : "atlantis/heroes/ford/spec-large.png",
+			"large" : "atlantis/heroes/ford/portrait-large.png",
+			"small" : "atlantis/heroes/ford/portrait-small.png"
+		},
+
+		"spellbook" :
+		[
+			"dispel"
+		],
+
+
+		"army" :
+		[
+			{
+				"creature" : "athosian",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "mastadge",
+				"max" : 8,
+				"min" : 5
+			},
+			{
+				"creature" : "malp",
+				"max" : 8,
+				"min" : 6
+			}
+		],
+
+		"skills" : 
+		[
+			{
+				"level" : "advanced",
+				"skill" : "wisdom"
+			}
+		],
+		
+		"specialty": //malp
+		[
+			{
+				"growsWithLevel": true, //value is calculated at level-up
+				"bonuses":
+				[
+					{
+						"type": "PRIMARY_SKILL",
+						"subtype": 0,
+						"limiters":
+						[
+							{
+								"type": "CREATURE_TYPE_LIMITER",
+								"parameters" : ["malp", true]
+							}
+						]
+					},
+					{
+						"type": "PRIMARY_SKILL",
+						"subtype": 1,
+						"limiters":
+						[
+							{
+								"type": "CREATURE_TYPE_LIMITER",
+								"parameters" : ["malp", true]
+							}
+						]
+					},
+					{
+						"type": "STACKS_SPEED",
+						"val": 1,
+						"limiters":
+						[
+							{
+								"type": "CREATURE_TYPE_LIMITER",
+								"parameters" : ["malp", true]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

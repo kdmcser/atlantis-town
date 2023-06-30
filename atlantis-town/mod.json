@@ -1,0 +1,58 @@
+{
+	"name" : "atlantis",
+	"description" : "",
+	
+	"author" : "",
+	"contact" : "",
+	"version" : "",
+	"modType" : "Town",
+
+    "factions" : [ "config/atlantis/town.json" ],
+	
+	"creatures" :
+	[
+		"config/atlantis/creatures/athosian.json",
+		"config/atlantis/creatures/satedan.json",
+		"config/atlantis/creatures/mastadge.json",
+		"config/atlantis/creatures/unas.json",
+		"config/atlantis/creatures/genii.json",
+		"config/atlantis/creatures/dagan.json",
+		"config/atlantis/creatures/malp.json",
+		"config/atlantis/creatures/malp2.json",
+		"config/atlantis/creatures/replicator.json",
+		"config/atlantis/creatures/swarm.json",
+		"config/atlantis/creatures/wraithwarrior.json",
+		"config/atlantis/creatures/soldier.json",
+		"config/atlantis/creatures/squid.json",
+		"config/atlantis/creatures/trex.json"
+	],
+	
+        
+    
+	
+	"heroClasses" :
+	[
+		"config/atlantis/classes/wraith.json",
+		"config/atlantis/classes/tauri.json"
+	],
+
+	"heroes" :
+	[
+		"config/atlantis/heroes/kenny.json",
+		"config/atlantis/heroes/todd.json",
+		"config/atlantis/heroes/primary.json",
+		"config/atlantis/heroes/condemned.json",
+		"config/atlantis/heroes/bob.json",
+		"config/atlantis/heroes/steve.json",
+		"config/atlantis/heroes/ellia.json",
+		"config/atlantis/heroes/billy.json",
+		"config/atlantis/heroes/ford.json",
+		"config/atlantis/heroes/teyla.json",
+		"config/atlantis/heroes/zelenka.json",
+		"config/atlantis/heroes/john.json",
+		"config/atlantis/heroes/rodney.json",
+		"config/atlantis/heroes/elizabeth.json",
+		"config/atlantis/heroes/ronon.json",
+		"config/atlantis/heroes/beckett.json"
+	]
+}

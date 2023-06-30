@@ -1,0 +1,90 @@
+{
+    "malp2":
+	{
+		"name" :
+		{
+			"plural" : "Assault M.A.L.P.s",
+			"singular" : "Assault M.A.L.P."
+		},
+		"advMapAmount" :
+		{
+			"max" : 12,
+			"min" : 8
+		},
+		"faction" : "atlantis",
+		"aiValue" : 1300,
+		"hasDoubleWeek": true,
+		"attack" : 14,
+		"cost" :
+		{
+			"gold" : 625
+		},
+		"damage" :
+		{
+			"max" : 20,
+			"min" : 13
+		},
+		"defense" : 13,
+		"fightValue" : 1100,
+		"graphics" :
+		{
+			"animation" : "atlantis/battle/creatures/malp2.DEF",
+			"map" : "atlantis/map/malp2mini.def",
+			"iconSmall" : "atlantis/iconsSmall/malp2s.bmp",
+			"iconLarge" : "atlantis/iconsBig/malp2l.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.00,
+				"idle" : 10.00,
+				"attack" : 1.00
+			},
+			"missile" :
+			{
+				"attackClimaxFrame" : 8,
+				"projectile" : "atlantis/battle/creatures/projectile/bullet.def",
+				"offset" :
+				{
+					"upperX" : 41,
+					"upperY" : -92,
+					"middleX" : 58,
+					"middleY" : -79,
+					"lowerX" : 29,
+					"lowerY" : -14
+				},
+				"frameAngles" : [90, 72, 45, 27, 0, -27, -45, -72, -90, 0, 0, 0]
+			},	
+		},
+	    "doubleWide" : true,
+        "growth" : 3,
+		"hitPoints" : 55,
+		"level" : 5,
+		"shots" : 24,
+		"sound" :
+		{
+			"attack": "atlantis/malpatk.wav",
+			"defend": "atlantis/malphit.wav",
+			"killed": "atlantis/malpdie.wav",
+			"move": "atlantis/malpwalk.wav",
+			"shoot" : "atlantis/gun.wav",
+			"wince": "atlantis/malphit.wav"
+ 		},
+		"speed" : 8,
+		"abilities" :
+		{
+			"canshoot" :
+			{
+				"type" : "SHOOTER"
+			},
+                "noRetaliate" :
+			{
+				"type" : "BLOCKS_RETALIATION"
+			}
+
+		},
+		"stackExperience" :
+		[
+
+		]	
+	}
+}
