@@ -53,20 +53,15 @@
 			}
 		],
 		
-		"specialty": //Ice Bolt, Solmyr-like
-		[
-			{
-				"bonuses":
-
-				[
-					{
-						"type": "SPECIAL_SPELL_LEV",
-						"subtype": "spell.iceBolt",
-						"val": 5 // make her stronger a bit }:>
-
-					}
-				]
+		"specialty" : {
+			"bonuses" : {
+				"iceBolt" : {
+					"subtype" : "spell.iceBolt",
+					"type" : "SPECIAL_SPELL_LEV",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 3
+				}
 			}
-		]
+		}
 	}
 }

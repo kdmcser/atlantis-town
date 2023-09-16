@@ -57,18 +57,14 @@
 			}
 		],
 		
-		"specialty": //Haste
-		[
-			{
-				"bonuses":
-				[
-					{
-						"type": "SPECIAL_PECULIAR_ENCHANT",
-						"subtype": "spell.haste",
-						"addInfo": 0 //normal, like most of hereos
-					}
-				]
+		"specialty" : {
+			"bonuses" : {
+				"haste" : {
+					"addInfo" : 0,
+					"subtype" : "spell.haste",
+					"type" : "SPECIAL_PECULIAR_ENCHANT"
+				}
 			}
-		]
+		}
 	}
 }

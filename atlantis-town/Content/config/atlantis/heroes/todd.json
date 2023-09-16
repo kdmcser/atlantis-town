@@ -47,48 +47,9 @@
 			}
 		],
 		
-		"specialty": //wraith
-		[
-			{
-				"growsWithLevel": true, //value is calculated at level-up
-				"bonuses":
-				[
-					{
-						"type": "PRIMARY_SKILL",
-						"subtype": 0,
-						"limiters":
-						[
-							{
-								"type": "CREATURE_TYPE_LIMITER",
-								"parameters" : ["wraithwarrior", true]
-							}
-						]
-					},
-					{
-						"type": "PRIMARY_SKILL",
-						"subtype": 1,
-						"limiters":
-						[
-							{
-								"type": "CREATURE_TYPE_LIMITER",
-								"parameters" : ["wraithwarrior", true]
-							}
-						]
-					},
-					{
-						"type": "STACKS_SPEED",
-						"val": 1,
-						"limiters":
-						[
-							{
-								"type": "CREATURE_TYPE_LIMITER",
-								"parameters" : ["wraithwarrior", true]
-							}
-						]
-					}
-				]
-			}
-		]
+		"specialty" : {
+			"creature" : "wraithwarrior"
+		}
 	}
 }
 

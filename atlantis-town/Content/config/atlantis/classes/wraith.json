@@ -9,7 +9,7 @@
 		"lowLevelChance" : { "attack" : 40, "defence" : 40, "knowledge" : 10, "spellpower" : 10 },
 		"mapObject" : { "templates" : { "default" : { "animation" : "atlantis/map/wraithmap" } } },
 		"name" : "Wraith",
-		"primarySkills" : { "attack" : 2, "defence" : 2, "knowledge" : 1, "spellpower" : 0 },
+		"primarySkills" : { "attack" : 2, "defence" : 2, "knowledge" : 1, "spellpower" : 1 },
 		"secondarySkills" :
 		{
 			"pathfinding"  : 8,

@@ -71,7 +71,7 @@
 			"wince": "HCRSWNCE.wav"
 		},
 		"speed" : 6,
-		"abilities" :   //something here is wrong, I have no idea what.
+		"abilities" :  
 		{
 			"canshoot" :
 			{
@@ -79,7 +79,9 @@
 			},
 			"always lucky" :
 			{
-				"type" : "SELF_LUCK"
+				"type" : "LUCK",
+				"val" : 1,
+				"valueType" : "INDEPENDENT_MAX"
 			},
 			"no melee penalty" :
 			{

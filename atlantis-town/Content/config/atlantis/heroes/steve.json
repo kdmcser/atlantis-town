@@ -53,18 +53,14 @@
 			}
 		],
 		
-		"specialty": //estates
-		[
-			{
-				"bonuses":
-				[
-					{
-						"type": "GENERATE_RESOURCE",
-						"subtype": "resource.gold",
-						"val": 350
-					}
-				]
+		"specialty" : {
+			"bonuses" : {
+				"gold" : {
+					"subtype" : "resource.gold",
+					"type" : "GENERATE_RESOURCE",
+					"val" : 350
+				}
 			}
-		]
+		}
 	}
 }

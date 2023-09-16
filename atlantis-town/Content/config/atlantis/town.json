@@ -4,6 +4,7 @@
 		"creatureBackground" : { "120px" : "atlantis/creature-bg-120px.bmp", "130px" : "atlantis/creature-bg-130px.bmp" },
 		"name" : "Atlantis",
 		"nativeTerrain" : "grass",
+		"boat" : "boatCastle",
 		"puzzleMap" : {
 			"prefix" : "atlantis/puzzle-map/",
 			"pieces" :
@@ -599,6 +600,7 @@
 			"guildWindow": "atlantis/town-screen/mage-guild",
 			"hallBackground" : "TPTHBKFR",
 			"horde" : [ 0 , -1 ],
+			"moatAbility" : "infernoMoat",
 			"icons" : {
 				"village" : {
 					"normal" : {"small" : "atlantis/icons/hall-small.bmp", "large" : "atlantis/icons/hall-big.bmp" },
@@ -1022,9 +1024,8 @@
 				}
 			},
 		"tavernVideo" : "TAVERN.BIK",
-			"townBackground": "atlantis/town-screen/background",
+		"townBackground": "atlantis/town-screen/background",
 		"warMachine" : "ballista",
-		"moatDamage" : 75,
 		"hallSlots" : [
 				[
 					[ "villageHall", "townHall", "cityHall", "capitol" ],
